@@ -104,31 +104,33 @@ img {
   font-size: 36px;
   line-height: 1.17;
 }
-.btn {
-  padding: 6px 22px;
+.btn{
+  width: 200px;
+  height: 50px;
 
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.87;
 
+  display: flex;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
+  justify-content: center;
+  letter-spacing: 0.06em;
 
-  background: var(--team-bg-color);
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-color);
+  box-shadow: var(--main-btn-box-shadow);
   border-radius: 4px;
   border: 0;
-  color: var(--primary-title-color);
 
   cursor: pointer;
 
-  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+  transition: background-color var(--animation);
 }
-
 .btn:hover,
 .btn:focus {
-  color: var(--primary-bg-color);
-  background: var(--secondary-color);
-  box-shadow: var(--btn-box-shadow);
+  background-color: var(--btn-active-color);
 }
 .btn-active {
   color: var(--primary-bg-color);
@@ -280,33 +282,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 0.06em;
-
-  color: var(--primary-bg-color);
-  background-color: var(--secondary-color);
-  box-shadow: var(--main-btn-box-shadow);
-  border-radius: 4px;
-  border: 0;
-
-  cursor: pointer;
-
-  transition: background-color var(--animation);
 }
-.main-btn:hover,
-.main-btn:focus {
-  background-color: var(--btn-active-color);
-}
+
 
 /*---------- Секция особенности --------*/
 
@@ -565,6 +542,7 @@ img {
 
 .footer-form {
   display: inline-flex;
+  align-items: flex-end;
   margin-left: 93px;
 }
 .footer-form-label {
@@ -599,6 +577,8 @@ img {
 
   background-color: var(--secondary-bg-color);
   color: var(--primary-bg-color);
+
+  transition: border-color var(--animation);
 }
 .footer-form-input-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -606,6 +586,13 @@ img {
 .footer-form-input-email:focus {
   outline: none;
   border-color: var(--secondary-color);
+}
+.email-btn{
+  margin-left: 12px;
+}
+.send-icon{
+  fill: var(--primary-bg-color);
+  margin-left: 10px;
 }
 /* ------------------------------------------------------ */
 
@@ -665,6 +652,31 @@ img {
 .btn-list-item:not(:last-child) {
   margin-right: 8px;
 }
+.portfolio-btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: var(--team-bg-color);
+  border-radius: 4px;
+  border: 0;
+  color: var(--primary-title-color);
+
+  cursor: pointer;
+
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--primary-bg-color);
+  background: var(--secondary-color);
+  box-shadow: var(--btn-box-shadow);
 
 /*------------- Сетка -----------*/
 .portfolio-list {
