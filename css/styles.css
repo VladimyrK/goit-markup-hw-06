@@ -31,7 +31,7 @@
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* -----ОБЩИЕ ПРАВИЛА И КЛАССЫ----- */
+/* --------- ОБЩИЕ ПРАВИЛА И КЛАССЫ --------- */
 
 html {
   box-sizing: border-box;
@@ -148,9 +148,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* ------------------- */
+/* ----------------------------------------------- */
 
-/* Шапка */
+/*------------------- Шапка ---------------*/
 
 .header {
   border: 1px solid #ececec;
@@ -247,8 +247,11 @@ img {
 .contacts-link:focus .contacts-icon {
   fill: var(--secondary-color);
 }
+/* --------------------------------------------- */
 
-/* Основная секция */
+/* ------------- Основной контент ------------ */
+
+/* ------Основная секция --------*/
 
 .main-section {
   max-width: 1600px;
@@ -305,7 +308,7 @@ img {
   background-color: var(--btn-active-color);
 }
 
-/* Секция особенности */
+/*---------- Секция особенности --------*/
 
 .features-list {
   display: flex;
@@ -336,7 +339,7 @@ img {
   border-radius: 4px;
 }
 
-/* Секция услуг */
+/* ------- Секция услуг --------*/
 .services {
   padding-top: 0;
 }
@@ -374,7 +377,7 @@ img {
   background-color: var(--services-list-content-bg);
 }
 
-/* Секция команды */
+/*----------- Секция команды ----------*/
 
 .team {
   background-color: var(--team-bg-color);
@@ -477,8 +480,9 @@ img {
 .client-logos-link:focus .client-logo {
   fill: var(--secondary-color);
 }
+/* -------------------------------------------------- */
 
-/* Футер */
+/*------------------- Футер ------------------*/
 
 .footer {
   padding-top: 60px;
@@ -490,7 +494,8 @@ img {
   display: inline-flex;
   align-items: baseline;
 }
-/* Контакты */
+/*----------- Контакты ------------*/
+
 .footer .logo {
   margin-bottom: 20px;
 
@@ -518,7 +523,9 @@ img {
 .footer-contacts:active {
   color: var(--secondary-color);
 }
-/* Присоединяйтесь */
+
+/*---------- Присоединяйтесь ---------*/
+
 .footer-join {
   display: inline-flex;
   flex-flow: column;
@@ -554,7 +561,55 @@ img {
   background-color: var(--secondary-color);
 }
 
-/* Модальное окно */
+/*------------ Форма подписки ----------*/
+
+.footer-form {
+  display: inline-flex;
+  margin-left: 93px;
+}
+.footer-form-label {
+  display: flex;
+  flex-direction: column;
+}
+.footer-form-label-text {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
+.footer-form-input-email {
+  display: flex;
+  align-items: center;
+
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+}
+.footer-form-input-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-input-email:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+/* ------------------------------------------------------ */
+
+/*------------------- Модальное окно --------------*/
 .backdrop {
   display: flex;
   position: fixed;
@@ -597,10 +652,11 @@ img {
 
   cursor: pointer;
 }
+/* ------------------------------------------------------------ */
 
-/*----- ПОРТФОЛИО -----*/
+/*----------------------- ПОРТФОЛИО ----------------------*/
 
-/* Кнопки */
+/*------------- Кнопки -----------*/
 .btn-list {
   display: flex;
   justify-content: center;
@@ -609,7 +665,8 @@ img {
 .btn-list-item:not(:last-child) {
   margin-right: 8px;
 }
-/* Сетка */
+
+/*------------- Сетка -----------*/
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -648,7 +705,7 @@ img {
   opacity: 0;
 
   transform: translateY(100%);
-  transition: transform var(--animation);
+  transition: transform var(--animation), opacity var(--animation);
 }
 .portfolio-list-link:hover .portfolio-overlay-content,
 .portfolio-list-link:focus .portfolio-overlay-content {
