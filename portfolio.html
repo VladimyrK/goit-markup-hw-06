@@ -203,7 +203,8 @@
 
     <!-- ФУТЕР -->
     <footer class="footer">
-      <!-- контакты -->
+      <!--------------- контакты ---------------->
+
       <div class="container">
         <address class="adress">
           <a class="link logo" href="./index.html"><span>Web</span>Studio</a>
@@ -213,7 +214,9 @@
             <li><a class="link footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-        <!-- Присоединяйтесь -->
+
+        <!---------- Присоединяйтесь ------------>
+
         <div class="footer-join">
           <p class="join-appeal">присоединяйтесь</p>
           <ul class="list join-icons-wrap">
@@ -247,6 +250,21 @@
             </li>
           </ul>
         </div>
+
+        <!------------- Форма подписки ------------>
+
+        <form class="footer-form" name="subscription" autocomplete="on">
+          <label class="label-column">
+            <span class="footer-form-label">Подпишитесь на рассылку</span>
+            <input class="footer-form-email" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button class="btn email-btn" type="submit">
+            Подписаться
+            <svg class="send-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
